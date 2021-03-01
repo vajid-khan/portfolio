@@ -41,7 +41,7 @@ const Resume: React.FC<Props> = (props) => {
 					<div className='col-12 col-lg-6'>
 						<h2 className='title title--h3'>
 							<i className='fa-2x fa fa-home text-primary'></i>{" "}
-							Education
+							Experience
 						</h2>
 						<div className='timeline'>
 							<article className='timeline__item'>
@@ -91,7 +91,7 @@ const Resume: React.FC<Props> = (props) => {
 					<div className='col-12 col-lg-6'>
 						<h2 className='title title--h3'>
 							<i className='fa-2x fa fa-home text-primary'></i>{" "}
-							Experience
+							Education
 						</h2>
 						<div className='timeline'>
 							<article className='timeline__item'>

@@ -276,6 +276,9 @@ a:hover {
 .contacts-block {
   margin-bottom: 1rem;
 }
+.contacts-block i{
+  margin-right: 0.5rem;
+}
 .contacts-block__item a {
   color: #DEDDE0;
 }
