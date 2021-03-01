@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import Navigation, { Pages } from "./component/navigation";
-import Profile from "./component/profile";
+import "./styles/bootstrap.min.css";
+import "./styles/style.css";
+import "./styles/style-dark.css";
 import About from "./pages/about";
 import Resume from "./pages/resume";
+import Profile from "./component/profile";
+import Navigation, { Pages } from "./component/navigation";
 
 function App() {
 
@@ -25,7 +28,9 @@ function App() {
 								{activePage === Pages.resume && <Resume />}
 							</div>
 
-							<footer className='footer'>© 2019 vCard</footer>
+							<footer className='footer'>
+								© 2021 Vajid Khan
+							</footer>
 						</div>
 					</div>
 				</div>

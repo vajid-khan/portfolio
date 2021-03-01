@@ -31,10 +31,6 @@
  - Other
  
 ------------------------------------------------ */
-@import url(http://netgon.net/artstyles/v-card/assets/styles/vendors/bootstrap.min.css);
-@import url(http://netgon.net/artstyles/v-card/assets/styles/vendors/swiper.min.css);
-@import url(http://netgon.net/artstyles/v-card/assets/styles/vendors/simplebar.min.css);
-@import url(http://netgon.net/artstyles/v-card/assets/icons/style.css);
 @import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&amp;display=swap");
 /* -----------------------------------------------------------------
@@ -1263,6 +1259,10 @@ button:focus {
   height: 100%;
   width: 100%;
 }
+
+.avatar img{
+  border-radius: 25%;
+}
 .avatar--180 {
   max-height: 11.25rem;
   max-width: 11.25rem;
@@ -1292,8 +1292,9 @@ button:focus {
   }
 }
 .avatar__box {
-  -webkit-clip-path: url(#avatar-box);
-  clip-path: url(#avatar-box);
+  width: '100%';
+  height: '100%';
+  border-radius: '25%';
 }
 .avatar__hexagon {
   -webkit-clip-path: url(#avatar-hexagon);

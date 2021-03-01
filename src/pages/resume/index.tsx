@@ -40,11 +40,7 @@ const Resume: React.FC<Props> = (props) => {
 				<div className='row'>
 					<div className='col-12 col-lg-6'>
 						<h2 className='title title--h3'>
-							<img
-								className='title-icon'
-								src='http://netgon.net/artstyles/v-card/assets/icons/dark/icon-education.svg'
-								alt=''
-							/>{" "}
+							<i className='fa-2x fa fa-home text-primary'></i>{" "}
 							Education
 						</h2>
 						<div className='timeline'>
@@ -94,11 +90,7 @@ const Resume: React.FC<Props> = (props) => {
 
 					<div className='col-12 col-lg-6'>
 						<h2 className='title title--h3'>
-							<img
-								className='title-icon'
-								src='http://netgon.net/artstyles/v-card/assets/icons/dark/icon-experience.svg'
-								alt=''
-							/>{" "}
+							<i className='fa-2x fa fa-home text-primary'></i>{" "}
 							Experience
 						</h2>
 						<div className='timeline'>

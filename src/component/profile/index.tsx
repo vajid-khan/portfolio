@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import profile from "../../assets/avatar-3.jpg";
 
 interface Props {}
 
@@ -7,15 +8,9 @@ const Profile: React.FC<Props> = (props) => {
 	return (
 		<aside className='col-12 col-md-12 col-xl-3'>
 			<div className='sidebar box shadow pb-0 sticky-column'>
-				<svg className='avatar avatar--180' viewBox='0 0 188 188'>
-					<g className='avatar__box'>
-						<image
-							href='/assets/img/avatar-1.jpg'
-							height='100%'
-							width='100%'
-						/>
-					</g>
-				</svg>
+				<div className='avatar'>
+					<img src={profile} alt={"Avatar"} />
+				</div>
 				<div className='text-center'>
 					<h3 className='title title--h3 sidebar__user-name'>
 						<span className='weight--500'>Felecia</span> Brown

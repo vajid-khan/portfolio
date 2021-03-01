@@ -29,11 +29,7 @@ const About: React.FC<Props> = (props) => {
 				<div className='row'>
 					<div className='col-12 col-lg-6'>
 						<div className='case-item box box__second'>
-							<img
-								className='case-item__icon'
-								src='../assets/icons/dark/icon-design.svg'
-								alt=''
-							/>
+							<i className='fa-2x fa fa-home text-primary'></i>
 							<div>
 								<h3 className='title title--h5'>Web Design</h3>
 								<p className='case-item__caption'>
@@ -46,11 +42,7 @@ const About: React.FC<Props> = (props) => {
 
 					<div className='col-12 col-lg-6'>
 						<div className='case-item box box__second'>
-							<img
-								className='case-item__icon'
-								src='../assets/icons/dark/icon-dev.svg'
-								alt=''
-							/>
+							<i className='fa-2x fa fa-home text-primary'></i>
 							<div>
 								<h3 className='title title--h5'>
 									Web Development
@@ -65,11 +57,7 @@ const About: React.FC<Props> = (props) => {
 
 					<div className='col-12 col-lg-6'>
 						<div className='case-item box box__second'>
-							<img
-								className='case-item__icon'
-								src='../assets/icons/dark/icon-app.svg'
-								alt=''
-							/>
+							<i className='fa-2x fa fa-home text-primary'></i>
 							<div>
 								<h3 className='title title--h5'>Mobile Apps</h3>
 								<p className='case-item__caption'>
@@ -82,11 +70,7 @@ const About: React.FC<Props> = (props) => {
 
 					<div className='col-12 col-lg-6'>
 						<div className='case-item box box__second'>
-							<img
-								className='case-item__icon'
-								src='../assets/icons/dark/icon-photo.svg'
-								alt=''
-							/>
+							<i className='fa-2x fa fa-home text-primary'></i>
 							<div>
 								<h3 className='title title--h5'>Photography</h3>
 								<p className='case-item__caption'>
