@@ -1,9 +1,33 @@
-import React, { useState } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useEffect, useState } from "react";
 
-interface Props {}
+export enum Pages {
+	about = "about",
+	resume = "resume",
+	contact = "contact",
+}
 
-const Navigation: React.FC<Props> = (props) => {
+interface Props {
+	page: string;
+	navigate: (page: string) => void;
+}
+
+const body = document.getElementById('body');
+
+const Navigation: React.FC<Props> = ({ page, navigate }) => {
 	const [isActive, setActive] = useState(false);
+
+	useEffect(()  => {
+		setActive(false);
+	},  [page]);
+
+	useEffect(() => {
+		if (isActive) {
+			body?.classList.add('open-menu');
+		} else {
+			body?.classList.remove('open-menu')
+		}
+	}, [isActive]);
 
 	return (
 		<>
@@ -19,22 +43,32 @@ const Navigation: React.FC<Props> = (props) => {
 			<div
 				className={`inner-menu js-menu ${isActive ? "is-active" : ""}`}>
 				<ul className='nav' style={{ width: isActive ? "100%" : "0%" }}>
-					<li className='nav__item'>
-						<a className='active' href='about.html'>
+					<li
+						className='nav__item'
+						onClick={() => navigate(Pages.about)}>
+						<a
+							className={page === Pages.about ? "active" : ""}
+							href={"#"}>
 							About
 						</a>
 					</li>
-					<li className='nav__item'>
-						<a href='resume.html'>Resume</a>
+					<li
+						className='nav__item'
+						onClick={() => navigate(Pages.resume)}>
+						<a
+							className={page === Pages.resume ? "active" : ""}
+							href={"#"}>
+							Resume
+						</a>
 					</li>
-					<li className='nav__item'>
-						<a href='portfolio.html'>Portfolio</a>
-					</li>
-					<li className='nav__item'>
-						<a href='blog.html'>Blog</a>
-					</li>
-					<li className='nav__item'>
-						<a href='contact.html'>Contact</a>
+					<li
+						className='nav__item'
+						onClick={() => navigate(Pages.contact)}>
+						<a
+							className={page === Pages.contact ? "active" : ""}
+							href={"#"}>
+							Contact
+						</a>
 					</li>
 				</ul>
 			</div>

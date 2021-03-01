@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 interface Props {}
@@ -22,16 +23,6 @@ const Profile: React.FC<Props> = (props) => {
 					<div className='badge badge--dark'>Creative Director</div>
 
 					<div className='social'>
-						<a
-							className='social__link'
-							href='../../../../www.facebook.com/index.html'>
-							<i className='font-icon icon-facebook'></i>
-						</a>
-						<a
-							className='social__link'
-							href='../../../../www.behance.com/index.html'>
-							<i className='font-icon icon-twitter'></i>
-						</a>
 						<a
 							className='social__link'
 							href='../../../../www.linkedin.com/index.html'>
@@ -75,16 +66,6 @@ const Profile: React.FC<Props> = (props) => {
 							title='Phone'>
 							<i className='font-icon icon-phone'></i>
 							+1 (070) 123-4567
-						</li>
-						<li
-							className='contacts-block__item'
-							data-toggle='tooltip'
-							data-placement='top'
-							title='Skype'>
-							<a href='skype:skype-example'>
-								<i className='font-icon icon-skype'></i>
-								Felecia_Brown
-							</a>
 						</li>
 					</ul>
 
